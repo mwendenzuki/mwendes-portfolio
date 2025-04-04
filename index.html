@@ -3,78 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
-    <img
-      src="images/potrait.jpeg"
-      alt="My headshot in potrait mode"
-      style="height: 200px; width: 200px"
+    <title>Ruth Mwende Nzuki | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
     />
-    <h1>Ruth Mwende Nzuki</h1>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <h2>About me:</h2>
-    <h3>
-      Junior Frontend Developer: React, HTML, CSS and JavaScript | Aspiring Full
-      Stack Developer | Passionate about building responsive websites.
-    </h3>
-    <p>
-      I am a recent IT graduate with a strong passion for building intuitive,
-      user-friendly web applications. Proficient in frontend technologies such
-      as HTML, CSS, JavaScript, and frameworks like React, I have gained
-      hands-on experience through personal projects and certifications and
-      professional experience in IT Support. My portfolio showcases my ability
-      to transform design concepts into functional and responsive websites.
-      Eager to contribute my skills to an innovative team and grow as a
-      developer in a dynamic environment.
-    </p>
+    <header>
+      <button id="theme-toggle">
+        <span id="toggle-icon">🌙</span>
+      </button>
+      <img src="images/potrait.jpeg" alt="My headshot" class="profile-img" />
+      <h1>Ruth Mwende Nzuki</h1>
+    </header>
 
-    <h2>Educational Background:</h2>
-    <p>Bachelor of Science in Information Technology</p>
-    <p>Jomo Kenyatta University of Agriculture and Technology</p>
-    <p>Graduated: 2024.</p>
+    <section class="about">
+      <h2>💾 About Me</h2>
+      <h3>💻 Junior Frontend Developer | Aspiring Full Stack Developer 👩🏾‍💻</h3>
+      <p>
+        I am a recent IT graduate with a strong passion for building intuitive,
+        user-friendly web applications. Proficient in frontend technologies such
+        as HTML, CSS, JavaScript, and frameworks like React, I have gained
+        hands-on experience through personal projects and certifications and
+        professional experience in IT Support. My portfolio showcases my ability
+        to transform design concepts into functional and responsive websites.
+      </p>
+    </section>
 
-    <h2>Interests:</h2>
-    <ol type="i">
-      <li>
-        Web Development: Exploring frontend frameworks and technologies (React
-        and Vue) , server-side scripting through Next and Nuxt, Bootstrap, Sass
-        and Material UI for styling & finally, databases MongoDB, MySQL,
-        Firebase, Supabase).
-      </li>
-      <li>
-        Responsive Web Design: Creating user-friendly and accessible web
-        applications.
-      </li>
-      <li>
-        Adaptive Learning: Researching modern learning management systems that
-        supplement learning in higher education institutions by implementing
-        adaptive learning.
-      </li>
-      <li>Responsive Web Design:</li>
-    </ol>
+    <div class="grid-container">
+      <section class="card education">
+        <h2>🎓 Educational Background</h2>
+        <strong>Bachelor of Science in Information Technology</strong>
+        <p>Jomo Kenyatta University of Agriculture and Technology</p>
+        <p>Graduated: 2024</p>
+      </section>
 
-    <h2>Projects:</h2>
-    <p>
-      Project Cryptoverse: A website containing the latest cryptocurrency news
-      and information.
-    </p>
-    <a href="https://thecryptoinfo-app.netlify.app">Project Cryptoverse</a>
+      <section class="card interests">
+        <h2>🖲️ Interests</h2>
+        <ol type="i">
+          <li>
+            <strong>Web Development: </strong>Exploring frontend frameworks and
+            technologies (React, Vue), server-side scripting through Next and
+            Nuxt, and databases like MongoDB and Firebase.
+          </li>
+          <li>
+            <strong>Responsive Web Design: </strong>Creating user-friendly and
+            accessible web applications.
+          </li>
+          <li>
+            <strong>Adaptive Learning: </strong>Implementing modern learning
+            systems to support education.
+          </li>
+        </ol>
+      </section>
 
-    <p>Shinobi CSS Library: A simple CSS library for devs.</p>
-    <a href="https://github.com/mwendenzuki/shinobi-css-library"
-      >Shinobi CSS Library</a
-    >
+      <section class="card skills">
+        <h2>🦾 Technical Skills</h2>
+        <ul>
+          <li><strong>Languages: </strong> HTML, CSS, JavaScript</li>
+          <li>
+            <strong>Frameworks/Libraries: </strong>React, Vue, Tailwind CSS,
+            Bootstrap
+          </li>
+          <li><strong>Tools: </strong>Git, GitHub, VS Code, npm</li>
+          <li>
+            <strong>Responsive Design: </strong>Mobile-first, Flexbox, CSS Grid
+          </li>
+        </ul>
+      </section>
 
-    <p>Discover Movie App: A film information library.</p>
-    <a href="https://reduxmovieinfoapp.netlify.app/">Discover Movie App</a>
+      <section class="card projects">
+        <h2>📥 Projects</h2>
+        <ul>
+          <li>
+            <strong>Cryptoverse:</strong>
+            <a href="https://thecryptoinfo-app.netlify.app" target="_blank"
+              >Latest cryptocurrency news and info</a
+            >
+          </li>
+          <li>
+            <strong>Shinobi CSS Library:</strong>
+            <a
+              href="https://github.com/mwendenzuki/shinobi-css-library"
+              target="_blank"
+              >A simple CSS library for devs</a
+            >
+          </li>
+          <li>
+            <strong>Discover Movie App:</strong>
+            <a href="https://reduxmovieinfoapp.netlify.app/" target="_blank"
+              >Film info and discovery platform</a
+            >
+          </li>
+        </ul>
+      </section>
 
-    <h2>Contact Me:</h2>
-    <a href="https://github.com/mwendenzuki">Github</a>
-    <a href="https://linkedin.com/in/ruthnzuki">LinkedIn</a>
-    <a href="https://x.com/mwendenzukii">Twitter</a>
-    <a href="https://instagram.com/mwendenzuki">Instagram</a>
+      <section class="contact">
+        <h2>☎️ Contact Me</h2>
+        <div class="social-links">
+          <a href="https://github.com/mwendenzuki" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/ruthnzuki" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://x.com/mwendenzukii" target="_blank">Twitter</a>
+          <a href="https://instagram.com/mwendenzuki" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <a href="docs/MwendeNzuki_Dev_CV.pdf" download class="download-btn"
+        >Download CV</a
+      >
+    </footer>
   </body>
-  <br />
-  <br />
-  <button>Download CV here</button>
 </html>
